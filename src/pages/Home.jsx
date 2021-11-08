@@ -1,20 +1,18 @@
 import { Link } from "solid-app-router";
-import styles from "../App.module.css";
 import Layout from "../components/Layout";
+import bg from "../assets/bg.jpg";
 
 function Showcase() {
   return (
-    <div className={styles.showcase}>
+    <div class="center-align showcase">
       <h1>Welcome to E-Bay</h1>
       <p>You needs will be fulfilled here.</p>
-      <Link href="/products">
-        <button>Shop Now</button>
-      </Link>
+      <a href="/products" class="waves-effect waves-light btn">
+        Shop Now
+      </a>
 
-      <p class="caption">
-        <Link href="/login">
-          <u>Login</u>
-        </Link>{" "}
+      <p>
+        <Link href="/login">Login </Link>
         to get personalized products.
       </p>
     </div>
@@ -23,9 +21,13 @@ function Showcase() {
 
 function Home() {
   return (
-    <Layout>
-      <Showcase />
-    </Layout>
+    <>
+      <div class="homepage">
+        <Layout>
+          <Showcase />
+        </Layout>
+      </div>
+    </>
   );
 }
 

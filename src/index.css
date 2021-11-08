@@ -17,14 +17,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-a{
-  text-decoration: none;
-  color: rgba(0,0,0.8);
-}
-
-.caption {
-  font-size: 14px;
-  color: rgb(41, 41, 41);
-  line-height: 28px;
-}

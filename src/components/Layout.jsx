@@ -1,5 +1,4 @@
 import { Link } from "solid-app-router";
-import styles from "../App.module.css";
 
 function Layout(props) {
   const navitems = [
@@ -11,18 +10,22 @@ function Layout(props) {
 
   return (
     <div>
-      <div className={styles.nav}>
-        <h3>Brand Name</h3>
-        <ul>
-          <For each={navitems}>
-            {(item, i) => (
-              <li>
-                <Link href={item.link}>{item.title}</Link>
-              </li>
-            )}
-          </For>
-        </ul>
-      </div>
+      <nav>
+        <div class="container nav-wrapper">
+          <a href="#" class="brand-logo">
+            E-Bay
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <For each={navitems}>
+              {(item, i) => (
+                <li>
+                  <Link href={item.link}>{item.title}</Link>
+                </li>
+              )}
+            </For>
+          </ul>
+        </div>
+      </nav>
       {props.children}
     </div>
   );
