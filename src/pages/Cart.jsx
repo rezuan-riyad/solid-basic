@@ -6,7 +6,11 @@ const Cart = ({ cart, setCart }) => {
     <Layout>
       <div style={{ width: "500px", margin: "0 auto" }}>
         <CartLayout cart={cart} setCart={setCart} />
-        <button class="btn">Proceed To Pay</button>
+        {
+          cart()[0] ? 
+          <button class="btn">Proceed To Pay</button> :
+          <p class="grey-text">No items in Cart</p>
+        }
       </div>
     </Layout>
   );

@@ -17,3 +17,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.login-form{
+  max-width: 400px;
+  margin: 10rem auto;
+  box-shadow: 1px 1px 4px lightgray;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.form-header{
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.login-btn{
+  width: 100%;
+}
