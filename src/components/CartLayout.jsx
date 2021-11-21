@@ -3,7 +3,7 @@ const CartLayout = ({ cart, setCart }) => {
     console.log(item)
     setCart([...cart().filter((elem) => elem.id !== item.id)]);
   };
-  console.log(cart())
+  // console.log(cart())
   return (
     <div>
       <div>
